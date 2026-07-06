@@ -10,7 +10,7 @@ This portfolio was personally constructed around home labs that showcase fundame
 each lab is centered around preparing me for real world day-to-day experiences in a tier 1 help desk or IT support role. Documentation is included.
 
 The repository contains a variety of home labs that are based on the most common tasks in a tier 1 help desk and IT support job descriptions. 
-Screenshots with descriptions of each step, full written walkthroughs in README.md, and ticket notes written in business style will be featured in every lab folder.
+Screenshots with descriptions of each step, full written walkthroughs in README.md, and ticket notes written in business style will be featured in almost every lab folder.
 
 ---
 
