@@ -14,7 +14,7 @@ Screenshots with descriptions of each step, full written walkthroughs in README.
 
 ---
 
-## Copyright and License
+## License
 
 Copyright © 2026 Ikenna Mennelik Ifedobi. All rights reserved.
 
