@@ -28,7 +28,7 @@ To safely configure a static IP in a bridged environment without disrupting exis
    * **Preferred DNS:** `127.0.0.1` (Loopback address ensuring the server points to its own local AD-integrated DNS zone)
 
 ![Server Rename Confirmation](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/98c043dae632934c707165080f01144a822b39cd/01a-server-prep.png)
-![Static IP and DNS Setiings](<img width="1920" height="1140" alt="Image" src="https://github.com/user-attachments/assets/b6af259b-d11f-4bc9-9dfe-636dc5be5c43" />)
+![Static IP and DNS Setiings](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/d85f21a24fe8a99f2baf174fe4f6b3df4b118cc0/01b-static-ip.png)
 
 ### Step 2: Installing the AD DS Binary Files
 * Opened **Server Manager** and initiated the *Add Roles and Features Wizard*.
