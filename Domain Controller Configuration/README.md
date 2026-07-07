@@ -27,8 +27,9 @@ To safely configure a static IP in a bridged environment without disrupting exis
    * **Default Gateway:** `10.0.0.1` (Points directly to the physical home router)
    * **Preferred DNS:** `127.0.0.1` (Loopback address ensuring the server points to its own local AD-integrated DNS zone)
 
-![Server Rename Confirmation](screenshots/01a-server-prep.png)
-![Static IP and DNS Setiings](screenshots/01b-static-ip.png)
+![Server Rename Confirmation](C:\Users\menne\OneDrive\Documents\ShareX\Screenshots\2026-07\01a-server-prep.png)
+![Static IP and DNS Setiings](C:\Users\menne\OneDrive\Documents\ShareX\Screenshots\2026-07\01b-static-ip.png
+)
 
 ### Step 2: Installing the AD DS Binary Files
 * Opened **Server Manager** and initiated the *Add Roles and Features Wizard*.
