@@ -27,8 +27,7 @@ To safely configure a static IP in a bridged environment without disrupting exis
    * **Default Gateway:** `10.0.0.1` (Points directly to the physical home router)
    * **Preferred DNS:** `127.0.0.1` (Loopback address ensuring the server points to its own local AD-integrated DNS zone)
 
-![Server Rename Confirmation](<img width="1920" height="1140" alt="01a-server-prep" src="https://github.com/user-attachments/assets/cfd21a7e-fee4-4934-b10f-95fe7e39b0a8" />
-)
+![Server Rename Confirmation](<img width="1920" height="1140" alt="Image" src="https://github.com/user-attachments/assets/10ca8f9c-0dd2-4afe-b3fc-b22e524ae6ea" />)
 ![Static IP and DNS Setiings](<img width="1920" height="1140" alt="01b-static-ip" src="https://github.com/user-attachments/assets/d30666f7-04af-4c69-9283-2eaf7cad97ab" />
 )
 
