@@ -43,15 +43,11 @@ To safely configure a static IP in a bridged environment without disrupting exis
 * In the Deployment Configuration, selected **Add a new forest**.
 * Specified the Root Domain Name: `lab.local`.
 
-![Adding a New Forest](screenshots/03-new-forest-setup.png)
-
 ### Step 4: Configuring Domain Options & DSRM
 * Set the Forest and Domain functional levels to **Windows Server 2016** (highest available option in Server 2022).
 * Ensured **Domain Name System (DNS) server** was checked.
 * Created a secure **Directory Services Restore Mode (DSRM)** password and stored it safely.
 * Clicked through the NetBIOS name confirmation (`LAB`) and paths setup.
-
-![Domain Options and DSRM Password](screenshots/04-domain-options.png)
 
 ### Step 5: Prerequisites Check & Installation
 * The wizard performed a prerequisite check to verify the network and system configuration.
