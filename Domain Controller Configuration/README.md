@@ -36,7 +36,7 @@ To safely configure a static IP in a bridged environment without disrupting exis
 * Selected `DC01` from the server pool and checked the box for **Active Directory Domain Services**.
 * Accepted the required management features and completed the installation wizard.
 
-![AD DS Role Selection in Server Manager](screenshots/02-add-adds-role.png)
+![AD DS Role Selection in Server Manager](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/52030ecd6efd356c51c943c161faa20d58111994/vmware_HbXO2var0M.png)
 
 ### Step 3: Promoting the Server to a Domain Controller
 * Clicked the yellow notification flag in Server Manager and selected **Promote this server to a domain controller**.
