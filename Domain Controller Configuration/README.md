@@ -54,8 +54,7 @@ To safely configure a static IP in a bridged environment without disrupting exis
 * Reviewed and ignored minor warnings regarding delegation for DNS and cryptography algorithms.
 * Clicked **Install**. The server automatically rebooted upon completion to finalize the promotion.
 
-![Prerequisites Verification and Install](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/39c465fbd0a13aa5c84b496ddb12688cf2433782/vmware_HbXO2var0M.png)
-
+![Prerequisites Verification and Install](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/e16f428dacd3620445dc81f31a05a708bdfabe54/vmware_oE7UlCeKkY.png)
 ---
 
 ## 🔍 Verification & Post-Installation Checks
