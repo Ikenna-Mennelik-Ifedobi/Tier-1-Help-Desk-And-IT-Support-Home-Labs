@@ -1,7 +1,7 @@
 # Windows Server 2022: AD DS Installation & Domain Controller Promotion
 
-## 📌 Project Overview
-This project documents the step-by-step process of preparing a standalone Windows Server 2022 instance, installing the Active Directory Domain Services (AD DS) role, and promoting the server to a primary Domain Controller (DC) for a new forest. 
+## 📌 Lab Objective
+This lab documents the step-by-step process of preparing a standalone Windows Server 2022 instance, installing the Active Directory Domain Services (AD DS) role, and promoting the server to a primary Domain Controller (DC) for a new forest. 
 
 ### 🛠️ Skills Gained / Tools Used
 * **Operating System:** Windows Server 2022 Standard
