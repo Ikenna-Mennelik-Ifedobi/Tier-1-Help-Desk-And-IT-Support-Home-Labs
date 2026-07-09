@@ -1,4 +1,4 @@
-# Windows 11 Domain Join Documentation
+# Windows 11 Machine Domain Join
 
 Author: Ikenna Mennelik Ifedobi
 
