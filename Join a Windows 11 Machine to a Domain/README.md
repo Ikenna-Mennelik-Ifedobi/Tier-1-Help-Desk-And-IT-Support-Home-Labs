@@ -67,15 +67,12 @@ ping lab.local
    * **Password:** *[Your Domain Password]*
 7. Select **OK**.
 
-![Active Directory Domain Admin Credentials Prompt]()
+![Active Directory Domain Admin Credentials Prompt](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/8058846e39605ab3c176dc3bbe27649348c3fe44/Join%20a%20Windows%2011%20Machine%20to%20a%20Domain/vmware_NKrS8jcNKG.png)
 
 ---
 
 ### 4. Finalize and Reboot
 1. A system message reading *"Welcome to the lab.local domain"* indicates a successful domain join.
-
-![Welcome to the Domain Success Notification Pop-up](images/welcome-success.png)
-
 2. Click **OK** through the successive acknowledgement warnings.
 3. Click **Close** on the master System Properties window.
 4. Select **Restart Now** when prompted to initialize the domain configuration.
