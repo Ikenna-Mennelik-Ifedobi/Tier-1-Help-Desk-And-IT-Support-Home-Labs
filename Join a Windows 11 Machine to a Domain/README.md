@@ -8,7 +8,7 @@ Environment: Windows 11 Client Machine(Virtualized Bridged Network) + Windows Se
 
 Completed: July 2026
 
-This document outlines the standard operational configuration steps required to join a Windows 11 client machine to the company network domain.
+---
 
 ## 🎯 Objective
 To successfully add a Windows 11 workstation to the centralized network domain, enabling the employee to authenticate and log in using their company domain credentials.
