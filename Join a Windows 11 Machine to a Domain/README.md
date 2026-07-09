@@ -48,7 +48,7 @@ ping lab.local
 ```
 * **Expected Result:** Both system utilities must successfully return and resolve the server IP footprint at `10.0.0.220`.
 
-![Command Prompt Ping and Nslookup Output Verification]()
+![Command Prompt Ping and Nslookup Output Verification](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/935c04f35b09dff8e7694f77f063a55f62c26dfc/Join%20a%20Windows%2011%20Machine%20to%20a%20Domain/CMD.jpg)
 
 ---
 
@@ -60,7 +60,7 @@ ping lab.local
 4. Locate the **Member of** toggle group, select **Domain**, and type: `lab.local`
 5. Select **OK**.
 
-![System Properties Computer Name Domain Input Window](images/domain-input.png)
+![System Properties Computer Name Domain Input Window]()
 
 6. When the Windows Security prompt appears, enter administrative authorization credentials to approve the join:
    * **Username:** `lab.local\Administrator` (or designated delegation account)
