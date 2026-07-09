@@ -1,5 +1,13 @@
 # Windows 11 Domain Join Documentation
 
+Author: Ikenna Mennelik Ifedobi
+
+Doamin: Active Directory Administration
+
+Environment: Windows 11 Client Machine(Virtualized Bridged Network) + Windows Server 2022
+
+Completed: July 2026
+
 This document outlines the standard operational configuration steps required to join a Windows 11 client machine to the company network domain.
 
 ## 🎯 Objective
