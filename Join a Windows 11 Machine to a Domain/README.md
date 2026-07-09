@@ -60,14 +60,14 @@ ping lab.local
 4. Locate the **Member of** toggle group, select **Domain**, and type: `lab.local`
 5. Select **OK**.
 
-![System Properties Computer Name Domain Input Window]()
+![System Properties Computer Name Domain Input Window](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/bc26b3e531db6f3dd996b85656d4972670098069/Join%20a%20Windows%2011%20Machine%20to%20a%20Domain/Domain%20Rename.png)
 
 6. When the Windows Security prompt appears, enter administrative authorization credentials to approve the join:
    * **Username:** `lab.local\Administrator` (or designated delegation account)
    * **Password:** *[Your Domain Password]*
 7. Select **OK**.
 
-![Active Directory Domain Admin Credentials Prompt](images/domain-credentials.png)
+![Active Directory Domain Admin Credentials Prompt]()
 
 ---
 
