@@ -34,7 +34,7 @@ The Windows 11 workstation must use the company network DNS server to locate the
 8. Populate the **Preferred DNS** target box with `10.0.0.220`.
 9. Select **Save** to apply the settings.
 
-![Windows 11 IPv4 DNS Configuration Settings](images/dns-configuration.png)
+![Windows 11 IPv4 DNS Configuration Settings](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/fedcb00e4b526fea6095a6ca4ae0a86938096374/Join%20a%20Windows%2011%20Machine%20to%20a%20Domain/Preferred%20DNS.png)
 
 ---
 
@@ -48,7 +48,7 @@ ping lab.local
 ```
 * **Expected Result:** Both system utilities must successfully return and resolve the server IP footprint at `10.0.0.220`.
 
-![Command Prompt Ping and Nslookup Output Verification](images/network-verification.png)
+![Command Prompt Ping and Nslookup Output Verification]()
 
 ---
 
