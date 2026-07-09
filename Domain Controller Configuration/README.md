@@ -4,7 +4,7 @@ Author: Ikenna Mennelik Ifedobi
 
 Doamin: Domain Controller Configuration
 
-Environment: Windows 11 Client Machine(Virtualized Bridged Network)
+Environment: Windows Server 2022
 
 Completed: July 2026
 
