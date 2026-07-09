@@ -8,6 +8,8 @@ Environment: Windows 11 Client Machine(Virtualized Bridged Network)
 
 Completed: July 2026
 
+---
+
 ## 📌 Lab Objective
 This lab documents the step-by-step process of preparing a standalone Windows Server 2022 instance, installing the Active Directory Domain Services (AD DS) role, and promoting the server to a primary Domain Controller (DC) for a new forest. 
 
