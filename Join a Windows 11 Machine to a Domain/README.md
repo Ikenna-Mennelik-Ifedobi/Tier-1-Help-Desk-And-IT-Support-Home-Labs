@@ -87,7 +87,7 @@ ping lab.local
    * **Format:** `username@lab.local` or `LAB\username`
    * **Password:** *[The User's Assigned Corporate Password]*
 
-![Windows 11 Other User Domain Login Screen](images/domain-login.png)
+![Windows 11 Other User Domain Login Screen](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/4b0f07a199669e5062fd3708469304a518fdde47/Join%20a%20Windows%2011%20Machine%20to%20a%20Domain/Other%20User.jpg)
 
 ### Incident Resolution Guides
 * **Fault: "An Active Directory Domain Controller could not be contacted"**
