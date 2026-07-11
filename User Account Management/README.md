@@ -16,11 +16,11 @@ To establish a secure, audited process for managing user identity lifetimes. Thi
 ---
 
 ### 🏢 Business Scenario 
-* **Identity Provisioning Event (Date: July 10, 2026; 10:00 A.M.):** A new hire requires immediate environment setup inside the domain network. As a Tier 1 Help Desk Technician, you must create a new domain user object under a distinct departmental OU (`lab.local/Employees/Marketing`), populate their operational contact parameters, and map their profile to a specific departmental file share group.
+* **Identity Provisioning Event (Date: July 10, 2026):** A new hire requires immediate environment setup inside the domain network. As a Tier 1 Help Desk Technician, you must create a new domain user object under a distinct departmental OU (`lab.local/Employees/Marketing`), populate their operational contact parameters, and map their profile to a specific departmental file share group.
 
-* **HR Suspension Operations (Date: July 10, 2026; 12:00 P.M.):** Human Resources issues an urgent policy suspension notice regarding this user. To guarantee complete risk mitigation, you must instantly block interactive network logon paths.
+* **HR Suspension Operations (Date: July 13, 2026):** Human Resources issues an urgent policy suspension notice regarding this user. To guarantee complete risk mitigation, you must instantly block interactive network logon paths.
 
-* **Reinstatement Operations (Date: July 10, 2026; 5:00 P.M.):** Following a resolved internal HR inquiry, you receive authorization to restore full access. You must reverse the suspension, unlock the authentication profile, and ensure zero degradation of group-level network permissions.
+* **Reinstatement Operations (Date: July 17, 2026):** Following a resolved internal HR inquiry, you receive authorization to restore full access. You must reverse the suspension, unlock the authentication profile, and ensure zero degradation of group-level network permissions.
 
 ---
 
