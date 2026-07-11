@@ -49,15 +49,17 @@ To establish a secure, audited process for managing user identity lifetimes. Thi
 
 5. **Initialize User Object:** Right-click the newly created `Marketing` Group, select **New** > **User**, and fill in the official first name, last name, and User Principal Name (UPN).
 
-![Active Directory Creating New User Object inside Marketing Group]()
+![Active Directory Creating New User Object inside Marketing Group](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/1934a6cc3a4293f01354567727398a67e8344a51/User%20Account%20Management/New%20User%20Object.png)
 
 6. **Populate Profile Metadata Attributes:** Open the new user's **Properties** sheet and fill in the text fields across the **General**, **Organization**, and **Telephones** tabs (e.g., Office Phone, Job Title, Department, Manager name).
 
-![Active Directory User Properties Profile Attribute Metadata Fields]()
+![Active Directory User Properties Profile Attribute Metadata Fields](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/1934a6cc3a4293f01354567727398a67e8344a51/User%20Account%20Management/General_Properties.png)
+![Active Directory User Properties Profile Attribute Metadata Fields](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/1934a6cc3a4293f01354567727398a67e8344a51/User%20Account%20Management/Organization_Properties.png)
+
 
 7. **Assign Security Group Allocation:** Navigate to the **Member Of** properties tab, click **Add...**, select the designated network access group (e.g., `Marketing-Dept-GG`), and click apply.
 
-![Active Directory User Properties Group Membership Assignment]()
+![Active Directory User Properties Group Membership Assignment](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/1934a6cc3a4293f01354567727398a67e8344a51/User%20Account%20Management/Marketing%20Group%20Membership.png)
 
 ---
 
@@ -66,7 +68,7 @@ To establish a secure, audited process for managing user identity lifetimes. Thi
 
 2. **Execute Access Revocation:** Right-click the target user record, click **Disable Account**, and acknowledge the status lock warning dialog box.
 
-![Active Directory Users and Computers Disabling Marketing User Profile]()
+![Active Directory Users and Computers Disabling Marketing User Profile](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/1934a6cc3a4293f01354567727398a67e8344a51/User%20Account%20Management/Disabled.png)
 
 ---
 
@@ -75,7 +77,7 @@ To establish a secure, audited process for managing user identity lifetimes. Thi
 
 2. **Execute Access Restoration:** Right-click the user object and click **Enable Account**.
 
-![Active Directory Objects Tree Showing Disabled Object Overlay]()
+![Active Directory Objects Tree Showing Disabled Object Overlay](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/1934a6cc3a4293f01354567727398a67e8344a51/User%20Account%20Management/Enabled.png)
 
 3. **Verify Security Identifiers:** Inspect the **Member Of** panel to ensure department-level security groups remained unaltered throughout the suspension period.
 
