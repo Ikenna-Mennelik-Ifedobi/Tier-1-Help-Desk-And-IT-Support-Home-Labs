@@ -32,13 +32,13 @@ To configure automated brute-force defense parameters via Group Policy, trigger 
 
 4. **Configure Access Limits:** Double-click **Account lockout threshold**, modify the value field to **3 invalid logon attempts**, and apply changes.
 
-![Group Policy Management Editor Configuring Account Lockout Threshold to 3 Attempts]()
+![Group Policy Management Editor Configuring Account Lockout Threshold to 3 Attempts](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/60b61960f106133cef54274effd42ff87c02cba2/Account%20Unlock%20and%20Password%20Reset/Password_Attempt_Limit.png)
 
 5. **Force Security Policy Replication:** Open an administrative Command Prompt or PowerShell terminal and execute the infrastructure command:
    ```cmd
    gpupdate /force
    ```
-
+![gpupdate command to enforce security policy](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/60b61960f106133cef54274effd42ff87c02cba2/Account%20Unlock%20and%20Password%20Reset/gpupdate.png)
 ---
 
 ### Part B: Lockout Simulation (Windows 11 VM)
@@ -50,7 +50,7 @@ To configure automated brute-force defense parameters via Group Policy, trigger 
 
 4. **Verify Endpoint Enforcement:** Confirm that the Windows Security architecture halts further attempts and displays the explicit error message: *"The referenced account is currently locked out and may not be logged on to."*
 
-![Account is locked]()
+![Account is locked](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/60b61960f106133cef54274effd42ff87c02cba2/Account%20Unlock%20and%20Password%20Reset/Account_Locked.png)
 
 ---
 
@@ -61,7 +61,7 @@ To configure automated brute-force defense parameters via Group Policy, trigger 
 
 3. **Clear Security Restrictions:** Select the **Account** property tab, check the box next to **"Unlock account. This account is currently locked out on this Active Directory Domain Controller"**, and click **Apply**.
 
-![Active Directory Account Properties Checking the Unlock Account Status Box]()
+![Active Directory Account Properties Checking the Unlock Account Status Box](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/60b61960f106133cef54274effd42ff87c02cba2/Account%20Unlock%20and%20Password%20Reset/Account_Unlocked.png)
 
 4. **Initialize Credential Reset Action:** Right-click the user object icon within the main pane and select **Reset Password...**.
 
@@ -69,7 +69,7 @@ To configure automated brute-force defense parameters via Group Policy, trigger 
 
 6. **Enforce Next Logon Password Change:** Check the option box for **"User must change password at next logon"** and select **OK** to restore full user capability.
 
-![Active Directory Reset Password Dialog box Enforcing Next Logon Parameter]()
+![Active Directory Reset Password Dialog box Enforcing Next Logon Parameter](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/60b61960f106133cef54274effd42ff87c02cba2/Account%20Unlock%20and%20Password%20Reset/Temporary_Password.png)
 
 ---
 
@@ -81,6 +81,8 @@ To configure automated brute-force defense parameters via Group Policy, trigger 
 ### Operational Access Restoration
 * Verify that the black downward warning symbol is removed from Marcus Vance's object profile icon inside the ADUC panel.
 * Log in to the Windows 11 virtual machine using the staged credentials and verify that the interface seamlessly forces a new personal password configuration.
+
+![Password change for windows 11 client machine](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/60b61960f106133cef54274effd42ff87c02cba2/Account%20Unlock%20and%20Password%20Reset/Password_Change.png)
 
 ***
 
