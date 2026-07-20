@@ -32,7 +32,7 @@ To configure automated brute-force defense parameters via Group Policy, trigger 
 
 4. **Configure Access Limits:** Double-click **Account lockout threshold**, modify the value field to **3 invalid logon attempts**, and apply changes.
 
-![Group Policy Management Editor Configuring Account Lockout Threshold to 3 Attempts](images/gpo-lockout-threshold.png)
+![Group Policy Management Editor Configuring Account Lockout Threshold to 3 Attempts]()
 
 5. **Force Security Policy Replication:** Open an administrative Command Prompt or PowerShell terminal and execute the infrastructure command:
    ```cmd
@@ -50,6 +50,8 @@ To configure automated brute-force defense parameters via Group Policy, trigger 
 
 4. **Verify Endpoint Enforcement:** Confirm that the Windows Security architecture halts further attempts and displays the explicit error message: *"The referenced account is currently locked out and may not be logged on to."*
 
+![Account is locked]()
+
 ---
 
 ### Part C: Help Desk Account Remediation
@@ -59,7 +61,7 @@ To configure automated brute-force defense parameters via Group Policy, trigger 
 
 3. **Clear Security Restrictions:** Select the **Account** property tab, check the box next to **"Unlock account. This account is currently locked out on this Active Directory Domain Controller"**, and click **Apply**.
 
-![Active Directory Account Properties Checking the Unlock Account Status Box](images/ad-unlock-checkbox.png)
+![Active Directory Account Properties Checking the Unlock Account Status Box]()
 
 4. **Initialize Credential Reset Action:** Right-click the user object icon within the main pane and select **Reset Password...**.
 
@@ -67,7 +69,7 @@ To configure automated brute-force defense parameters via Group Policy, trigger 
 
 6. **Enforce Next Logon Password Change:** Check the option box for **"User must change password at next logon"** and select **OK** to restore full user capability.
 
-![Active Directory Reset Password Dialog box Enforcing Next Logon Parameter](images/ad-reset-password.png)
+![Active Directory Reset Password Dialog box Enforcing Next Logon Parameter]()
 
 ---
 
