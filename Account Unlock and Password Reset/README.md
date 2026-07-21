@@ -1,5 +1,15 @@
 # Active Directory Group Policy Configuration & Account Lockout Resolution Lab
 
+Author: Ikenna Mennelik Ifedobi
+
+Domain: Active Directory Administration
+
+Environment: Windows Server 2022 + Windows 11 Client MAchine(Virtualised Bridged-Network)
+
+Completed: July 2026
+
+---
+
 ## 🎯 Objective
 To configure automated brute-force defense parameters via Group Policy, trigger an enforced security lockout on a client machine, and perform identity-verified account unlocking and credential resets within Active Directory Users and Computers (ADUC).
 
