@@ -29,7 +29,7 @@ To systematically diagnose network adapter faults, prove the functional differen
 
 3. **Verify Baseline Operational Health:** Confirm that the website landing page loads seamlessly, establishing that external network routing and DNS name resolution are functioning as expected.
 
-![Web Browser Successfully Loading Google Homepage Confirming Healthy DNS](images/browser-baseline-success.png)
+![Web Browser Successfully Loading Google Homepage Confirming Healthy DNS](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/2af105c7e42b78ca9c066f78e61db5ed3467f695/Troubleshoot%20DNS%20and%20Browser%20Failure/Screenshots/Google_Homepage.png)
 
 ---
 
@@ -40,7 +40,7 @@ To systematically diagnose network adapter faults, prove the functional differen
 
 3. **Inject Unreachable DNS IP:** Locate the **DNS server assignment** row, click **Edit**, change the dropdown configuration to **Manual**, toggle **IPv4** to **On**, and assign an unreachable dummy IP address (e.g., `10.99.99.99`).
 
-![Windows 11 IPv4 Network Adapter Properties Manual DNS Configuration Entry](images/dns-fault-injection.png)
+![Windows 11 IPv4 Network Adapter Properties Manual DNS Configuration Entry](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/2af105c7e42b78ca9c066f78e61db5ed3467f695/Troubleshoot%20DNS%20and%20Browser%20Failure/Screenshots/DNS_Settings.png)
 
 4. **Commit Configuration Changes:** Click **Save** to lock the faulty name translation parameters into the active network adapter stack.
 
@@ -55,7 +55,7 @@ To systematically diagnose network adapter faults, prove the functional differen
    ```
    * **Expected Failure Output:** `Ping request could not find host google.com. Please check the name and try again.` (Indicates the system cannot successfully map the text name to a numeric IP).
 
-![Command Prompt Ping Attempt to Domain Name Yielding Unresolvable Host Error](images/ping-domain-failure.png)
+![Command Prompt Ping Attempt to Domain Name Yielding Unresolvable Host Error](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/2af105c7e42b78ca9c066f78e61db5ed3467f695/Troubleshoot%20DNS%20and%20Browser%20Failure/Screenshots/Google_Ping.png)
 
 3. **Prove Raw WAN IP Reachability:** Test low-level network path processing by skipping the name server lookup tier entirely and pinging a known public network backbone directly:
    ```cmd
@@ -63,7 +63,7 @@ To systematically diagnose network adapter faults, prove the functional differen
    ```
    * **Expected Success Output:** Clean, low-latency ICMP Echo replies. This explicitly proves that the workstation retains active routing out to the open internet, isolating the issue purely away from a physical cord or ISP outage.
 
-![Command Prompt Ping to Public IP Address Returning Clean Successful Replies](images/ping-ip-success.png)
+![Command Prompt Ping to Public IP Address Returning Clean Successful Replies](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/2af105c7e42b78ca9c066f78e61db5ed3467f695/Troubleshoot%20DNS%20and%20Browser%20Failure/Screenshots/IP_Address_Ping.png)
 
 4. **Isolate Name Server Failure:** Directly query the network name translation system using the infrastructure analysis tool:
    ```cmd
@@ -71,7 +71,7 @@ To systematically diagnose network adapter faults, prove the functional differen
    ```
    * **Expected Failure Output:** `DNS request timed out.` or `No response from server.` (Confirms the lookup query is failing exclusively against the dead `10.99.99.99` destination).
 
-![Command Prompt NSLookup Diagnostic Tool Output Timed Out Against Dummy IP](images/nslookup-timeout-failure.png)
+![Command Prompt NSLookup Diagnostic Tool Output Timed Out Against Dummy IP](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/2af105c7e42b78ca9c066f78e61db5ed3467f695/Troubleshoot%20DNS%20and%20Browser%20Failure/Screenshots/Google_nslookup.png)
 
 ---
 
@@ -85,11 +85,11 @@ To systematically diagnose network adapter faults, prove the functional differen
    ipconfig /flushdns
    ```
 
-![Command Prompt IPConfig FlushDNS Tool Executing Cache Purge Confirmation](images/ipconfig-flushdns.png)
+![Command Prompt IPConfig FlushDNS Tool Executing Cache Purge Confirmation](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/2af105c7e42b78ca9c066f78e61db5ed3467f695/Troubleshoot%20DNS%20and%20Browser%20Failure/Screenshots/DNS_Flush.png)
 
 4. **Execute Post-Repair Verification:** Re-run `nslookup google.com` and reload your desktop web browser to confirm that internal names resolve instantly and application communications are restored.
 
-![Command Prompt Post Repair NSLookup Successfully Mapping Domain to IP Footprints](images/nslookup-repair-success.png)
+![Command Prompt Post Repair NSLookup Successfully Mapping Domain to IP Footprints](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/2af105c7e42b78ca9c066f78e61db5ed3467f695/Troubleshoot%20DNS%20and%20Browser%20Failure/Screenshots/Google_nslookup_again.png)
 
 ---
 
