@@ -30,38 +30,38 @@ Before simulating the hardware fault, execute a comprehensive bottom-up diagnost
    ```cmd
    ipconfig /all
    ```
-![Command Prompt Output Displaying Master IP Configuration and Adapter Properties](images/01-ipconfig-all.png)
+![Command Prompt Output Displaying Master IP Configuration and Adapter Properties](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/395b8263202109a0c1d35220512fe0e292b7bc1f/Network%20Troubleshooting%20with%20Command%20Line/Screenshots/ipconfig_all.png)
 
 2. **Validate Local Software Stack:** Confirm the operating system can process low-level network instructions:
    ```cmd
    ping 127.0.0.1
    ```
-![Command Prompt Successful Ping Output to Loopback Address](images/02-ping-loopback.png)
+![Command Prompt Successful Ping Output to Loopback Address](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/395b8263202109a0c1d35220512fe0e292b7bc1f/Network%20Troubleshooting%20with%20Command%20Line/Screenshots/loopback_address.png)
 
 3. **Validate Local Interface Assignment:** Ping the machine's own assigned local IP address (e.g., `10.0.0.50`) to verify the interface card is bound to the stack.
    ```cmd
    ping [Your_Machine_IP]
    ```
-![Command Prompt Successful Ping Output to Machine Assigned IP Address](images/03-ping-local-ip.png)
+![Command Prompt Successful Ping Output to Machine Assigned IP Address](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/395b8263202109a0c1d35220512fe0e292b7bc1f/Network%20Troubleshooting%20with%20Command%20Line/Screenshots/client_machine_ip.png)
 
 4. **Validate Local Subnet Gateway:** Ping the default gateway to ensure local area network path routing is open:
    ```cmd
    ping 10.0.0.1
    ```
-![Command Prompt Successful Ping Output to Default Gateway Router](images/04-ping-gateway.png)
+![Command Prompt Successful Ping Output to Default Gateway Router](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/395b8263202109a0c1d35220512fe0e292b7bc1f/Network%20Troubleshooting%20with%20Command%20Line/Screenshots/Default_Gateway.png)
 
 5. **Validate Wide Area Network Path:** Ping an external public host to confirm internet-wide route processing is healthy:
    ```cmd
    ping 8.8.8.8
    ```
-![Command Prompt Successful Ping Output to External Public IP Address](images/05-ping-public-ip.png)
+![Command Prompt Successful Ping Output to External Public IP Address](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/395b8263202109a0c1d35220512fe0e292b7bc1f/Network%20Troubleshooting%20with%20Command%20Line/Screenshots/Public_ip.png)
 
 ---
 
 ### Part B: Simulating the Hardware Fault (NIC Disconnection)
 1. **Disconnect Virtual Network Hardware:** Access your hypervisor software dashboard (such as VMware, Hyper-V, or Proxmox) and disconnect the network adapter or uncheck the "Connected" option box on the Windows 11 virtual machine settings pane.
 
-![Hypervisor Settings Disconnecting the Virtual Network Adapter from the VM](images/06-hypervisor-disconnect-adapter.png)
+![Hypervisor Settings Disconnecting the Virtual Network Adapter from the VM](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/395b8263202109a0c1d35220512fe0e292b7bc1f/Network%20Troubleshooting%20with%20Command%20Line/Screenshots/Disconnect_Network_Adapter.png)
 
 ---
 
@@ -74,7 +74,7 @@ Execute the following commands in exact chronological order to document how the 
    ```
    * **Expected Behavior:** The console outputs an error indicating that the operation cannot be performed on the interface while its media is disconnected.
 
-![Command Prompt IPConfig Release Failing Due to Disconnected Media State](images/07-ipconfig-release-disconnected.png)
+![Command Prompt IPConfig Release Failing Due to Disconnected Media State](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/395b8263202109a0c1d35220512fe0e292b7bc1f/Network%20Troubleshooting%20with%20Command%20Line/Screenshots/ipconfig_release.png)
 
 2. **Attempt Lease Renewal Protocol:** Force a lease request out to the subnet infrastructure:
    ```cmd
@@ -82,7 +82,7 @@ Execute the following commands in exact chronological order to document how the 
    ```
    * **Expected Behavior:** The command fails immediately with a strict media-disconnected warning, as no DHCP discover frames can be transmitted onto the physical wire.
 
-![Command Prompt IPConfig Renew Failing with Media Disconnected Error Code](images/08-ipconfig-renew-disconnected.png)
+![Command Prompt IPConfig Renew Failing with Media Disconnected Error Code](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/395b8263202109a0c1d35220512fe0e292b7bc1f/Network%20Troubleshooting%20with%20Command%20Line/Screenshots/ipconfig_renew.png)
 
 3. **Evaluate Local Address Resolution Table:** Inspect the local cache mapping table to evaluate gateway resolution properties:
    ```cmd
@@ -90,7 +90,7 @@ Execute the following commands in exact chronological order to document how the 
    ```
    * **Expected Behavior:** The command returns empty or displays no active entries for the default gateway, showing that resolution paths are invalid without an active network link.
 
-![Command Prompt ARP Cache Command Output Showing No Active Gateway Resolution entries](images/09-arp-cache-disconnected.png)
+![Command Prompt ARP Cache Command Output Showing No Active Gateway Resolution entries](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/395b8263202109a0c1d35220512fe0e292b7bc1f/Network%20Troubleshooting%20with%20Command%20Line/Screenshots/Inspect_arp_table.png)
 
 ---
 
@@ -102,7 +102,7 @@ Execute the following commands in exact chronological order to document how the 
    ping 8.8.8.8
    ```
 
-![Command Prompt Final Verification Test Returning Successful Pings Following Hardware Reconnection](images/10-final-verification-success.png)
+![Command Prompt Final Verification Test Returning Successful Pings Following Hardware Reconnection](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/395b8263202109a0c1d35220512fe0e292b7bc1f/Network%20Troubleshooting%20with%20Command%20Line/Screenshots/public_ip_again.png)
 
 ---
 
