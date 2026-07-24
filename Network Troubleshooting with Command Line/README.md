@@ -1,1 +1,119 @@
+# Network Troubleshooting with Command Line
+
+This repository documents the standard operational procedures for analyzing the behavior of the Windows TCP/IP network stack when a physical or virtual network interface card (NIC) is disconnected from the media layer.
+
+---
+
+## 🎯 Objective
+To systematically document the behavior of local IP configuration metrics, interface state commands, and address resolution tables before, during, and after a simulated hardware-level network adapter disconnection on a Windows 11 workstation.
+
+---
+
+## 📊 Environment & Diagnostic Tools
+
+| Infrastructure Component | Management Tool / Resource | Operational Function in Lab |
+| :--- | :--- | :--- |
+| **Local IP Stack Utilities** | `ipconfig` tool suite | Used to gather comprehensive adapter details (`/all`), discard current DHCP leases (`/release`), and request new leases (`/renew`). |
+| **Local Loopback / NIC IP** | `127.0.0.1` & Local Machine IP | Used to analyze software stack function vs. local network card interface configuration boundaries. |
+| **Address Resolution Protocol** | `arp -a` command utility | Displays the local hardware-to-IP address mapping table to evaluate gateway resolution properties. |
+| **Target Infrastructure** | Corporate Gateway & Public WAN | Default gateway router interface (`10.0.0.1`) and external public backbone routing footprints (`8.8.8.8`). |
+| **Target Endpoint** | Windows 11 Client Workstation (VM) | The managed virtual terminal used to execute diagnostic tests and simulate the hardware-level media disconnection. |
+
+---
+
+## 🚀 Standard Operating Procedures
+
+### Part A: Establishing the Operational Baseline (Pre-Disconnection)
+Before simulating the hardware fault, execute a comprehensive bottom-up diagnostic sweep to verify optimal layer-1 through layer-3 connection health.
+
+1. **Document Master IP Configurations:** Open Command Prompt and run the configuration review utility:
+   ```cmd
+   ipconfig /all
+   ```
+![Command Prompt Output Displaying Master IP Configuration and Adapter Properties](images/01-ipconfig-all.png)
+
+2. **Validate Local Software Stack:** Confirm the operating system can process low-level network instructions:
+   ```cmd
+   ping 127.0.0.1
+   ```
+![Command Prompt Successful Ping Output to Loopback Address](images/02-ping-loopback.png)
+
+3. **Validate Local Interface Assignment:** Ping the machine's own assigned local IP address (e.g., `10.0.0.50`) to verify the interface card is bound to the stack.
+   ```cmd
+   ping [Your_Machine_IP]
+   ```
+![Command Prompt Successful Ping Output to Machine Assigned IP Address](images/03-ping-local-ip.png)
+
+4. **Validate Local Subnet Gateway:** Ping the default gateway to ensure local area network path routing is open:
+   ```cmd
+   ping 10.0.0.1
+   ```
+![Command Prompt Successful Ping Output to Default Gateway Router](images/04-ping-gateway.png)
+
+5. **Validate Wide Area Network Path:** Ping an external public host to confirm internet-wide route processing is healthy:
+   ```cmd
+   ping 8.8.8.8
+   ```
+![Command Prompt Successful Ping Output to External Public IP Address](images/05-ping-public-ip.png)
+
+---
+
+### Part B: Simulating the Hardware Fault (NIC Disconnection)
+1. **Disconnect Virtual Network Hardware:** Access your hypervisor software dashboard (such as VMware, Hyper-V, or Proxmox) and disconnect the network adapter or uncheck the "Connected" option box on the Windows 11 virtual machine settings pane.
+
+![Hypervisor Settings Disconnecting the Virtual Network Adapter from the VM](images/06-hypervisor-disconnect-adapter.png)
+
+---
+
+### Part C: Analyzing the Disconnected Interface Lifecycle
+Execute the following commands in exact chronological order to document how the Windows operating system behaves when network media is completely missing.
+
+1. **Discard Active IP Lease Parameters:** Run the release utility to clear out the current configuration parameters:
+   ```cmd
+   ipconfig /release
+   ```
+   * **Expected Behavior:** The console outputs an error indicating that the operation cannot be performed on the interface while its media is disconnected.
+
+![Command Prompt IPConfig Release Failing Due to Disconnected Media State](images/07-ipconfig-release-disconnected.png)
+
+2. **Attempt Lease Renewal Protocol:** Force a lease request out to the subnet infrastructure:
+   ```cmd
+   ipconfig /renew
+   ```
+   * **Expected Behavior:** The command fails immediately with a strict media-disconnected warning, as no DHCP discover frames can be transmitted onto the physical wire.
+
+![Command Prompt IPConfig Renew Failing with Media Disconnected Error Code](images/08-ipconfig-renew-disconnected.png)
+
+3. **Evaluate Local Address Resolution Table:** Inspect the local cache mapping table to evaluate gateway resolution properties:
+   ```cmd
+   arp -a
+   ```
+   * **Expected Behavior:** The command returns empty or displays no active entries for the default gateway, showing that resolution paths are invalid without an active network link.
+
+![Command Prompt ARP Cache Command Output Showing No Active Gateway Resolution entries](images/09-arp-cache-disconnected.png)
+
+---
+
+### Part D: Hardware Reconnection & Post-Repair Validation
+1. **Reconnect Virtual Network Hardware:** Return to your hypervisor dashboard settings pane, re-enable the network adapter link, or check the "Connected" option box for the Windows 11 virtual machine.
+
+2. **Execute Final Reachability Sweep:** Return to the Command Prompt and ping the public network host backbone again to confirm the link layer has re-established communication:
+   ```cmd
+   ping 8.8.8.8
+   ```
+
+![Command Prompt Final Verification Test Returning Successful Pings Following Hardware Reconnection](images/10-final-verification-success.png)
+
+---
+
+## 🔍 Verification & Auditing
+
+### Media Disconnection Operational Matrix
+* **`ipconfig /release & /renew` behavior:** Windows explicitly blocks DHCP handshakes and locks state fields when media sense protocols report a broken physical link layer.
+* **`arp -a` behavior:** The address resolution cache cannot establish or maintain layer-2 MAC translations for the default gateway once the interface hardware goes offline.
+
+***
+
+**Maintained By:** Ikenna Mennelik Ifedobi  
+**Role:** Tier 1 Help Desk Technician  
 
