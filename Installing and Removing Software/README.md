@@ -51,6 +51,7 @@ To successfully deploy an approved enterprise software package, verify installat
 
 ### Part C: Conflict Identification & Isolation
 1. **Analyze System Integrity Logs:** Attempt to launch the original approved application or wait for the system to process the runtime error block.
+
 2. **Document Compatibility Daemon Warning:** Observe the automated **Program Compatibility Assistant** window popup alert indicating that an active program conflict or block has been flagged.
 ![Program Compatibility Assistant Pop-up Alert Intercepting Version Mismatch Block](images/06-compatibility-assistant-warning.png)
 
@@ -61,6 +62,7 @@ To successfully deploy an approved enterprise software package, verify installat
 
 ### Part D: Remediation & Post-Repair Validation
 1. **Target Conflicting Software Element:** Locate the unapproved legacy software object inside the **Installed apps** list panel layout.
+
 2. **Execute Clean Removal Action:** Click the three dots next to the legacy entry item tool row, select **Uninstall**, and authorize the removal action thread.
 ![Windows Uninstallation Wizard Removing the Conflicting Legacy Application File System Structure](images/08-uninstall-legacy-remediation.png)
 
