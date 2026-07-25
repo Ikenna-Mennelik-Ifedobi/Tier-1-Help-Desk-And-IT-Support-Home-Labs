@@ -29,8 +29,11 @@ To safely configure a static IP in a bridged environment without disrupting exis
 1. Opened Command Prompt on the host machine and ran `ipconfig` to determine the home network layout:
    * **Subnet Gateway:** Found to be `10.0.0.1`
    * **Subnet Mask:** `255.255.255.0`
+
 2. Selected a high IP address (`10.0.0.220`) outside the home router's typical dynamic DHCP pool to prevent IP address conflicts with household devices.
+
 3. Changed the server's randomized computer name to a standardized enterprise name: `DC01`.
+
 4. Assigned the static IPv4 configuration to the Server's network adapter:
    * **IP Address:** `10.0.0.220`
    * **Subnet Mask:** `255.255.255.0`
@@ -38,6 +41,7 @@ To safely configure a static IP in a bridged environment without disrupting exis
    * **Preferred DNS:** `127.0.0.1` (Loopback address ensuring the server points to its own local AD-integrated DNS zone)
 
 ![Server Rename Confirmation](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/98c043dae632934c707165080f01144a822b39cd/01a-server-prep.png)
+
 ![Static IP and DNS Setiings](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/d85f21a24fe8a99f2baf174fe4f6b3df4b118cc0/01b-static-ip.png)
 
 ### Step 2: Installing the AD DS Binary Files
