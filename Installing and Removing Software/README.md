@@ -30,22 +30,21 @@ To successfully deploy an approved enterprise software package, verify installat
 
 ### Part A: Approved Software Deployment & Verification
 1. **Execute Production Installation:** Log into the Windows 11 client virtual machine, launch the approved enterprise software installer package (e.g., Adobe Acrobat Reader v24), and complete the setup wizard.
-![Windows Installation Wizard Interface Executing Approved Corporate Software Deployment](images/01-approved-install-wizard.png)
+![Windows Installation Wizard Interface Executing Approved Corporate Software Deployment](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/e73cfb32d54d3f233d51158ea8ef3194eaa57ab3/Installing%20and%20Removing%20Software/Screenshots/Installation_Wizard.png)
 
 2. **Verify Correct Version Control Number:** Navigate to **Settings** > **Apps** > **Installed apps**, locate the software, and document the official version string to ensure alignment with company baselines.
-![Windows Installed Apps Configuration Window Confirming Production Version Number](images/02-verify-approved-version.png)
+![Windows Installed Apps Configuration Window Confirming Production Version Number](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/e73cfb32d54d3f233d51158ea8ef3194eaa57ab3/Installing%20and%20Removing%20Software/Screenshots/Correct_Version.png)
 
 3. **Establish Operational Application Baseline:** Launch the newly installed approved software tool from the desktop to confirm it opens cleanly without generating errors.
-![Approved Enterprise Software Utility Launching Cleanly on Desktop Without Error Alerts](images/03-approved-launch-success.png)
+![Approved Enterprise Software Utility Launching Cleanly on Desktop Without Error Alerts](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/e73cfb32d54d3f233d51158ea8ef3194eaa57ab3/Installing%20and%20Removing%20Software/Screenshots/Launch_Approved_Software.png)
 
 ---
 
 ### Part B: Simulating a Software Version Conflict
 1. **Deploy Outdated Legacy Package:** Run an unapproved legacy or older major version of the same software application tool (e.g., legacy Adobe Reader v11) alongside the production version.
-![Windows System Initializing Outdated Unapproved Legacy Application Installer Wizard](images/04-legacy-install-simulation.png)
+![Windows System Initializing Outdated Unapproved Legacy Application Installer Wizard](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/e73cfb32d54d3f233d51158ea8ef3194eaa57ab3/Installing%20and%20Removing%20Software/Screenshots/Legacy_Installation.png)
 
 2. **Intercept Architectural Discrepancy:** Complete the installer prompts and observe how the underlying operating system environment responds to the dual-version installation.
-![Windows Operating System Dialog Intercepting Installation and Warning of Coexisting Versions](images/05-version-coexistence-alert.png)
 
 ---
 
@@ -53,10 +52,9 @@ To successfully deploy an approved enterprise software package, verify installat
 1. **Analyze System Integrity Logs:** Attempt to launch the original approved application or wait for the system to process the runtime error block.
 
 2. **Document Compatibility Daemon Warning:** Observe the automated **Program Compatibility Assistant** window popup alert indicating that an active program conflict or block has been flagged.
-![Program Compatibility Assistant Pop-up Alert Intercepting Version Mismatch Block](images/06-compatibility-assistant-warning.png)
+![Program Compatibility Assistant Pop-up Alert Intercepting Version Mismatch Block](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/e73cfb32d54d3f233d51158ea8ef3194eaa57ab3/Installing%20and%20Removing%20Software/Screenshots/Software_Conflict.png)
 
 3. **Audit Active Application Inventory:** Return to **Settings** > **Apps** > **Installed apps** and observe the presence of both overlapping application versions sitting inside the ledger simultaneously.
-![Windows Installed Apps Registry List Displaying Both Production and Legacy Items](images/07-installed-apps-conflict-view.png)
 
 ---
 
@@ -64,13 +62,13 @@ To successfully deploy an approved enterprise software package, verify installat
 1. **Target Conflicting Software Element:** Locate the unapproved legacy software object inside the **Installed apps** list panel layout.
 
 2. **Execute Clean Removal Action:** Click the three dots next to the legacy entry item tool row, select **Uninstall**, and authorize the removal action thread.
-![Windows Uninstallation Wizard Removing the Conflicting Legacy Application File System Structure](images/08-uninstall-legacy-remediation.png)
+![Windows Uninstallation Wizard Removing the Conflicting Legacy Application File System Structure](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/e73cfb32d54d3f233d51158ea8ef3194eaa57ab3/Installing%20and%20Removing%20Software/Screenshots/Uninstall_Legacy.png)
 
 3. **Confirm Removal Verification:** Refresh the Installed Apps window interface ledger registry block to verify that only the single, approved production software entry remains.
-![Windows Installed Apps List Audited and Confirming Only Approved Asset Remains](images/09-remediated-apps-list.png)
+![Windows Installed Apps List Audited and Confirming Only Approved Asset Remains](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/e73cfb32d54d3f233d51158ea8ef3194eaa57ab3/Installing%20and%20Removing%20Software/Screenshots/Correct_Version.png)
 
 4. **Execute Final Software Quality Check:** Launch the approved enterprise software asset utility from the desktop workspace layout to confirm it opens successfully and operates completely without crashes or errors.
-![Approved Production Software Opening Successfully and Securely Restoring Workspace Baseline](images/10-final-launch-restoration.png)
+![Approved Production Software Opening Successfully and Securely Restoring Workspace Baseline](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/e73cfb32d54d3f233d51158ea8ef3194eaa57ab3/Installing%20and%20Removing%20Software/Screenshots/Launch_Approved_Software.png)
 
 ---
 
