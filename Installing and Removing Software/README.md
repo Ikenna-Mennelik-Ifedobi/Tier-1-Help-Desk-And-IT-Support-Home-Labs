@@ -1,6 +1,12 @@
 # Software Management: Application Lifecycle, Version Conflicts, and Remediation Lab
 
-This repository documents the standard operational procedures for deploying approved enterprise software packages, identifying legacy application version conflicts, and executing remediation steps on a Windows 11 workstation.
+Author: Ikenna Mennelik Ifedobi
+
+Domain: Windows 11 Software Deployment and Version Management
+
+Environment: Windows 11 Client, Adobe Acrobat Reader(Approved) Adobe Acrobat 5.0(Legacy Conflict)
+
+Completed July 2026
 
 ---
 
