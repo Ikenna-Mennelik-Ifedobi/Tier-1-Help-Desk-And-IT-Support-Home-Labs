@@ -1,6 +1,12 @@
 # Network Diagnostics: Troubleshoot DNS and Browser Failure
 
-This repository documents the standard operational procedures for isolating localized DNS name resolution failures from comprehensive wide area network (WAN) internet connectivity losses within the `lab.local` environment.
+Author: Ikenna Mennelik Ifedobi
+
+Domain: Network Diagnostics; DNS Resolution
+
+Environment: Windows 11 Client Machine
+
+Completed: July 2026
 
 ---
 
