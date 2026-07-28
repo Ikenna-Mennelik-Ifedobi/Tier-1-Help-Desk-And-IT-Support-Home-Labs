@@ -1,6 +1,12 @@
 # Network Troubleshooting with Command Line
 
-This repository documents the standard operational procedures for analyzing the behavior of the Windows TCP/IP network stack when a physical or virtual network interface card (NIC) is disconnected from the media layer.
+Author: Ikenna Mennelik Ifedobi
+
+Domain: Network Diagnostics; Command Line
+
+Environment: Windows 11 Client Machine
+
+Completed: July 2026
 
 ---
 
