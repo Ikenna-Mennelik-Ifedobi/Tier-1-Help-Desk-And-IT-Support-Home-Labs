@@ -29,7 +29,7 @@ To securely provision a centralized network file share, configure overlapping Sh
 ![Windows Server Advanced Sharing Properties Console Configuring Share Permissions](images/01-share-permissions.png)
 
 3. **Configure NTFS Security Layer:** Switch to the **Security** tab, click **Advanced**, disable permission inheritance, and strip unapproved users from the Access Control List (ACL).
-4. **Scope Access to Security Group:** Click **Add**, target the explicit departmental security group (e.g., `Finance-Dept-GG`), and assign them **Modify, Read & execute, List folder contents, Read, and Write** permissions.
+4. **Scope Access to Security Group:** Click **Add**, target the explicit departmental security group (e.g., `Finance-Dept-GG`), and assign them **Change, Read & execute, List folder contents, Read, and Write** permissions.
 ![Windows Server Advanced Security Settings Appending Departmental Security Group to NTFS ACL](images/02-ntfs-permissions.png)
 
 ---
