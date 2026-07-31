@@ -40,27 +40,31 @@ The Finance department contacts the IT Help Desk regarding an operational requir
 ---
 
 ## 🛠️ Actions Taken
-1. **Provisioned Server-Side Storage Folder:** Connected to the core domain architecture at `10.0.0.220` and initialized a storage directory named `Finance_Data`.
+1. **Staged Active Directory Security Group:** Initialized the Active Directory Users and Computers console (`dsa.msc`), navigated to the `lab.local/Employees` OU, and created a new global security group named `Finance-Dept-GG`.
 
-2. **Configured Advanced Network Share Parameters:** Adjusted folder sharing settings to set baseline Share properties to Change/Read parameters for the network path.
+2. **Provisioned Initial Group Nesting:** Queried the directory ledger for user account Sarah Jenkins and successfully appended her profile to the new `Finance-Dept-GG` object.
 
-3. **Enforced Restricted NTFS Access Control Lists:** Disabled inheritance controls on the hosting file system directory layer and purged generic user privileges from the registry ledger.
+3. **Provisioned Server-Side Storage Folder:** Connected to the core domain architecture at `10.0.0.220` and initialized a storage directory named `Finance_Data` inside the `C:\` partition volume.
 
-4. **Appended Scoped Security Group Permissions:** Granted explicit full Modify, Write, and Read access rights targeting the departmental group `Finance-Dept-GG`.
+4. **Configured Advanced Network Share Parameters:** Adjusted folder sharing settings to set baseline Share properties to Change/Read parameters for the network path.
 
-5. **Mapped Persistent Network Resource to Client:** Logged into workstation asset `WRK-W11-SHARE05` using an authorized profile, mapped the repository as drive letter **`Z:`**, and explicitly flagged the **"Reconnect at sign-in"** parameter to guarantee link persistence.
+5. **Enforced Restricted NTFS Access Control Lists:** Disabled inheritance controls on the hosting file system directory layer and purged generic user privileges from the registry ledger.
 
-6. **Executed Baseline Environment Initialization:** Instructed the authorized user to perform a complete system logoff and logon cycle to safely commit the persistent drive parameter to the local shell environment.
+6. **Appended Scoped Security Group Permissions:** Granted explicit full Modify, Write, and Read access rights targeting the departmental group `Finance-Dept-GG`.
 
-7. **Executed Positive Access Control Testing:** Verified the authorized user could successfully create, edit, and append file changes to document clean read/write synchronization.
+7. **Mapped Persistent Network Resource to Client:** Logged into workstation asset `WRK-W11-SHARE05` using an authorized profile, mapped the repository as drive letter **`Z:`**, and explicitly flagged the **"Reconnect at sign-in"** parameter to guarantee link persistence.
 
-8. **Executed Negative Access Control Validation:** Swapped terminal profiles to an unapproved user account lacking the proper group assignment parameters, and documented the resulting operating system access-denied block.
+8. **Executed Baseline Environment Initialization:** Instructed the authorized user to perform a complete system logoff and logon cycle to safely commit the persistent drive parameter to the local shell environment.
 
-9. **Resolved Unauthorized Access via Security Group Expansion:** Logged into the directory management dashboard, opened the properties panel for `Finance-Dept-GG`, and added the restricted user account object directly into the group membership directory ledger.
+9. **Executed Positive Access Control Testing:** Verified the authorized user could successfully create, edit, and append file changes to document clean read/write synchronization.
 
-10. **Forced Client Kerberos Token Refresh:** Instructed the end-user to execute a full system logoff and logon cycle on workstation `WRK-W11-SHARE05` to clear out their current session context and pull down an updated security token populated with the new security group SID from the domain controller.
+10. **Executed Negative Access Control Validation:** Swapped terminal profiles to an unapproved user account lacking the proper group assignment parameters, and documented the resulting operating system access-denied block.
 
-11. **Validated Final Resolution Success:** Re-tested folder navigation using the newly updated user profile, confirming seamless access to all directory files with zero errors generated.
+11. **Resolved Unauthorized Access via Security Group Expansion:** Logged into the directory management dashboard, opened the properties panel for `Finance-Dept-GG`, and added the restricted user account object directly into the group membership directory ledger.
+
+12. **Forced Client Kerberos Token Refresh:** Instructed the end-user to execute a full system logoff and logon cycle on workstation `WRK-W11-SHARE05` to clear out their current session context and pull down an updated security token populated with the new security group SID from the domain controller.
+
+13. **Validated Final Resolution Success:** Re-tested folder navigation using the newly updated user profile, confirming seamless access to all directory files with zero errors generated.
 
 ---
 
@@ -84,4 +88,3 @@ The network folder share infrastructure deployment, NTFS permissions mapping adj
 **Documented By:** Ikenna Mennelik Ifedobi  
 **Role:** Tier 1 Help Desk Technician  
 **Date:** July 31, 2026  
-
