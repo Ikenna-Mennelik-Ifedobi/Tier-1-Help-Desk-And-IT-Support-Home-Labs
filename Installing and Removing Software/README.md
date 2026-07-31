@@ -48,6 +48,7 @@ To successfully deploy an approved enterprise software package, verify installat
 
 ### Part B: Simulating a Software Version Conflict
 1. **Deploy Outdated Legacy Package:** Run an unapproved legacy or older major version of the same software application tool (e.g., legacy Adobe Reader v11) alongside the production version.
+
 ![Windows System Initializing Outdated Unapproved Legacy Application Installer Wizard](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/e73cfb32d54d3f233d51158ea8ef3194eaa57ab3/Installing%20and%20Removing%20Software/Screenshots/Legacy_Installation.png)
 
 2. **Intercept Architectural Discrepancy:** Complete the installer prompts and observe how the underlying operating system environment responds to the dual-version installation.
@@ -58,6 +59,7 @@ To successfully deploy an approved enterprise software package, verify installat
 1. **Analyze System Integrity Logs:** Attempt to launch the original approved application or wait for the system to process the runtime error block.
 
 2. **Document Compatibility Daemon Warning:** Observe the automated **Program Compatibility Assistant** window popup alert indicating that an active program conflict or block has been flagged.
+
 ![Program Compatibility Assistant Pop-up Alert Intercepting Version Mismatch Block](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/e73cfb32d54d3f233d51158ea8ef3194eaa57ab3/Installing%20and%20Removing%20Software/Screenshots/Software_Conflict.png)
 
 3. **Audit Active Application Inventory:** Return to **Settings** > **Apps** > **Installed apps** and observe the presence of both overlapping application versions sitting inside the ledger simultaneously.
