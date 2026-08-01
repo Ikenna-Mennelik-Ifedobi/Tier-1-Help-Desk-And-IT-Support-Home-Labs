@@ -1,5 +1,11 @@
 # Windows Server Infrastructure: File Share Deployment and Access Control Remediation
 
+Author: Ikenna Mennelik Ifedobi
+
+Domain: Active Directory Administration File Sharing and Permissions
+
+Environment: Windows Server 2022 + Windows 11 Client Machine(Virtualized-Bridged Network)
+
 ## 🎯 Objective
 To provision a secure departmental network file share, isolate access via overlapping Share and NTFS permissions, and resolve an unauthorized access-denied restriction block for an unmapped user account by updating security group memberships and refreshing client session tokens.
 
