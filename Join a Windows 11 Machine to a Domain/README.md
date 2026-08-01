@@ -13,7 +13,9 @@ Completed: July 2026
 ## 🎯 Objective
 To successfully add a Windows 11 workstation to the centralized network domain, enabling the employee to authenticate and log in using their company domain credentials.
 
-### 🏢 Business Scenario Example
+---
+
+## 🏢 Business Scenario Example
 A new employee has just been onboarded, and you are preparing their company-issued Windows 11 workstation. Before the user can log in with their corporate account credentials, the laptop must be joined to the internal company domain network (`lab.local`). As the IT support technician, you need to manually configure the network DNS settings so the machine can find the network, verify the connection, and securely complete the domain join process before handing the asset over to the employee.
 
 ---
