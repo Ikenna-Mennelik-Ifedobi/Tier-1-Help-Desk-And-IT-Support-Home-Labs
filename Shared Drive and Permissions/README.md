@@ -8,6 +8,8 @@ Environment: Windows Server 2022 + Windows 11 Client Machine(Virtualized-Bridged
 
 Completed: August 2026
 
+---
+
 ## 🎯 Objective
 To provision a secure departmental network file share, isolate access via overlapping Share and NTFS permissions, and resolve an unauthorized access-denied restriction block for an unmapped user account by updating security group memberships and refreshing client session tokens.
 
