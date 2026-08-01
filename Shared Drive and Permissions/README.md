@@ -59,7 +59,7 @@ To provision a secure departmental network file share, isolate access via overla
 
 ![Windows 11 Client Terminal Mapping Persistent Network Path to Z Drive](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/09b8f3a837e2b46ec2ee2f3f0127fd3b912039a6/Shared%20Drive%20and%20Permissions/Screenshots/Map_to_Zdrive.png)
 
-2. **Test Access of Authorized User:** Open the mapped **`Z:`** drive partition window as the authorized user. Right-click the empty folder canvas directory, select **New** > **Text Document**, append validation string metrics inside the file, and click save to confirm functional write authorization.
+2. **Test Access of Authorized User:** Open the mapped **`Z:`** drive partition window as the authorized user. Right-click the empty folder canvas directory, select **New** > **Text Document**, create test file to confirm write access.
 
 ![Windows 11 File Explorer Confirming Successful Text File Write Generation](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/8bbd8a9fc6d0018327a84eaca2cce06d9ba44e61/Shared%20Drive%20and%20Permissions/Screenshots/Test_Document_from_Zdrive.png)
 
