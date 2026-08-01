@@ -97,6 +97,7 @@ To systematically diagnose network adapter faults, prove the functional differen
 
 ![Command Prompt Post Repair NSLookup Successfully Mapping Domain to IP Footprints](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/2af105c7e42b78ca9c066f78e61db5ed3467f695/Troubleshoot%20DNS%20and%20Browser%20Failure/Screenshots/Google_nslookup_again.png)
 
+![Google able to be resolved post torubleshooting](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/85fe6792549486d4c409ca492dc06f2d2ce05611/Troubleshoot%20DNS%20and%20Browser%20Failure/Screenshots/Google_Homepage.png)
 ---
 
 ## 🔍 Verification & Auditing
