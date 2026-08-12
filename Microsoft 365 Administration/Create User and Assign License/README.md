@@ -26,16 +26,16 @@ To create a new cloud user and assign their productivity subscription license.
    * **Display Name:** Marcus Vance
    * **Username:** `mvance`
 
-![Microsoft 365 Admin Center User Creation Wizard Screen](images/01-m365-create-user.png)
+![Microsoft 365 Admin Center User Creation Wizard Screen](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/5f76aa003c8bf2dc03ec626f01ecf08d496db221/Microsoft%20365%20Administration/Create%20User%20and%20Assign%20License/Screenshots/User_Creation.png)
 
 4. Create a temporary password and check the box for **"Require this user to change their password when they first sign in"**. Click Next.
 5. In the Product Licenses step, check the box to assign a **Microsoft 365 Business Standard** license to this account. Click Next and click Finish.
 
-![Microsoft 365 Product Licensing Grid Assigning Business Standard Subscription to User](images/02-m365-assign-license.png)
+![Microsoft 365 Product Licensing Grid Assigning Business Standard Subscription to User](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/5f76aa003c8bf2dc03ec626f01ecf08d496db221/Microsoft%20365%20Administration/Create%20User%20and%20Assign%20License/Screenshots/Assign_License.png)
 
 6. Confirm the user appears in Active Users.
 
-![Active Users Confirmation](images/03-m365-license-inventory.png)
+![Active Users Confirmation](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/5f76aa003c8bf2dc03ec626f01ecf08d496db221/Microsoft%20365%20Administration/Create%20User%20and%20Assign%20License/Screenshots/Active_Users.png)
 
 ---
 
@@ -46,7 +46,7 @@ To create a new cloud user and assign their productivity subscription license.
 2. Enter Marcus Vance's cloud credentials (`mvance@://onmicrosoft.com`) and the temporary password.
 3. Verify that the login sequence successfully triggers a mandatory password change screen.
 
-![Office Portal Endpoint Login View Confirming Initial Password Reset Prompt](images/04-user-login-verify.png)
+![Office Portal Endpoint Login View Confirming Initial Password Reset Prompt](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/5f76aa003c8bf2dc03ec626f01ecf08d496db221/Microsoft%20365%20Administration/Create%20User%20and%20Assign%20License/Screenshots/Password_Reset.png)
 
 ***
 
