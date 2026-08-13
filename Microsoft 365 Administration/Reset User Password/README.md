@@ -21,7 +21,7 @@ To securely reset a cloud user's password and configure mandatory credential rot
 3. Locate the target employee profile name (**Marcus Vance**) from the directory listing and hover over their row.
 4. Click the **Reset password** key icon shortcut that appears next to their name (or click the account name and select **Reset password** from the top action bar).
 
-![Microsoft 365 Active Users Grid Launching the Reset Password Action Prompt](images/01-m365-password-reset-click.png)
+![Microsoft 365 Active Users Grid Launching the Reset Password Action Prompt](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/5b59f71c77382a1b804261bd01477b7b2cf88f2f/Microsoft%20365%20Administration/Reset%20User%20Password/Screenshots/Reset_Password_Action_Bar.png)
 
 5. In the password reset properties flyout panel, configure the following deployment settings:
    * Select **Automatically create a password** to let the system generate a secure, compliant temporary string.
@@ -29,7 +29,7 @@ To securely reset a cloud user's password and configure mandatory credential rot
    * Check the box for **"Email the sign-in info to me"** to securely deliver the temporary string to your administrative inbox.
 6. Click the master **Reset password** button at the bottom of the pane.
 
-![Microsoft 365 Password Configuration Flyout Pane Selecting Reset Parameters](images/02-m365-password-reset-save.png)
+![Microsoft 365 Password Configuration Flyout Pane Selecting Reset Parameters](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/5b59f71c77382a1b804261bd01477b7b2cf88f2f/Microsoft%20365%20Administration/Reset%20User%20Password/Screenshots/Reset_Parameters.png)
 
 ---
 
@@ -39,7 +39,7 @@ To securely reset a cloud user's password and configure mandatory credential rot
 1. Review the confirmation panel that appears on the right side of the screen once the task completes.
 2. Verify that the interface explicitly displays a **"Password reset"** success heading and outlines the auto-generated temporary password string. This confirms that the old account hash has been successfully overwritten in the cloud database.
 
-![Microsoft 365 Admin Center Confirmation Dialogue Disclosing Temporary Password Details](images/03-m365-password-reset-confirm.png)
+![Microsoft 365 Admin Center Confirmation Dialogue Disclosing Temporary Password Details](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/5b59f71c77382a1b804261bd01477b7b2cf88f2f/Microsoft%20365%20Administration/Reset%20User%20Password/Screenshots/Reset_Confirmation.png)
 
 ***
 
