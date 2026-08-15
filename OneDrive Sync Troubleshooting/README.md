@@ -40,7 +40,6 @@ To diagnose and resolve a cloud storage file synchronization failure by reproduc
 ![Pause Syncing for 2 hours via menu option](images/02-pause-sync-simulation.png)
 
 5. Return to your local File Explorer window. Verify that the file status icon next to `Diagnostic_Log.txt` has changed to a paused symbol or two parallel lines, mimicking a failed connection state.
-
 ![File Explorer Local Folder Displaying Paused Sync Status Icon Check](images/02-pause-sync-simulation.png)
 ---
 
