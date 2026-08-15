@@ -28,7 +28,7 @@ To diagnose and resolve a cloud storage file synchronization failure by reproduc
 3. Right-click inside the blank directory space, select **New** > **Folder**, and name it `Sync_Test_Folder`.
 4. Open the new folder, right-click, select **New** > **Text Document**, name it `Diagnostic_Log.txt`, and write a line of test text inside it. Save and close the file.
 
-![File Explorer Local Folder View Displaying Healthy Sync Status Icon Checks](images/01-local-file-baseline.png)
+![File Explorer Local Folder View Displaying Healthy Sync Status Icon Checks](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/ab69e7e28c7b5979eed32bb525ba7aec59a3fc58/OneDrive%20Sync%20Troubleshooting/Screenshots/Healthy_Sync_Check.png)
 
 ---
 
@@ -37,11 +37,11 @@ To diagnose and resolve a cloud storage file synchronization failure by reproduc
 2. Click the hidden icons arrow and select the blue **OneDrive cloud icon** to launch the client management pane.
 3. Click the gear icon (**Help & Settings**), hover over the **Pause syncing** flyout menu option row, and select any duration setting (e.g., *2 hours*) to take the upload path offline.
 
-![Pause Syncing for 2 hours via menu option](images/02-pause-sync-simulation.png)
+![Pause Syncing for 2 hours via menu option](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/ab69e7e28c7b5979eed32bb525ba7aec59a3fc58/OneDrive%20Sync%20Troubleshooting/Screenshots/Pause_Syncing.png)
 
 5. Return to your local File Explorer window. Verify that the file status icon next to `Diagnostic_Log.txt` has changed to a paused symbol or two parallel lines, mimicking a failed connection state.
 
-![File Explorer Local Folder Displaying Paused Sync Status Icon Check](images/02-pause-sync-simulation.png)
+![File Explorer Local Folder Displaying Paused Sync Status Icon Check](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/ab69e7e28c7b5979eed32bb525ba7aec59a3fc58/OneDrive%20Sync%20Troubleshooting/Screenshots/Confirm_Paused_Sync.png)
 ---
 
 ### Part C: Remediation
@@ -50,7 +50,7 @@ To diagnose and resolve a cloud storage file synchronization failure by reproduc
 2. **Resume Data Upload Pipeline:** Click the prominent **Resume syncing** button banner to force the client background service back into an active operating state.
 3. **Confirm Sync in file explorer:** Return to file explorer and make sure the icon is showing a green check mark.
 
-![OneDrive Sync Return back to original state](images/04-resume-sync-remediation.png)
+![OneDrive Sync Return back to original state](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/ab69e7e28c7b5979eed32bb525ba7aec59a3fc58/OneDrive%20Sync%20Troubleshooting/Screenshots/Original_State.png)
 
 ---
 
