@@ -44,7 +44,7 @@ To diagnose and resolve a cloud storage file synchronization failure by reproduc
 ---
 
 ### Part C: Diagnostic Verification & Remediation
-1. **Validate Cloud Data Absence:** Open a web browser, navigate to the cloud portal page (`https://office.com`), and open your online OneDrive files container. Observe that neither `Sync_Test_Folder` nor your text file appear on the web server, confirming a file synchronization block.
+1. Modify the file while OneDrive sync is paused.
 
 ![Web Browser Window Confirming local File Updates Are Completely Missing From Online Cloud Repository](images/03-cloud-portal-missing.png)
 
@@ -52,10 +52,6 @@ To diagnose and resolve a cloud storage file synchronization failure by reproduc
 3. **Resume Data Upload Pipeline:** Click the prominent **Resume syncing** button banner to force the client background service back into an active operating state.
 
 ![OneDrive System Tray Management Menu Clicking the Resume Syncing Button Configuration Option](images/04-resume-sync-remediation.png)
-
-4. **Confirm Successful Cloud Verification:** Wait a moment for the networking stream loop to clear. Refresh your web browser window displaying the online OneDrive web directory space. Verify that the folder and the text file populate seamlessly on the webpage without error prompts.
-
-![Web Browser Interface Displaying Successful Cloud Folder Upload Population Following Client Repair](images/05-cloud-upload-success.png)
 
 ---
 
