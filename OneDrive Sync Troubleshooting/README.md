@@ -6,7 +6,7 @@ To diagnose and resolve a cloud storage file synchronization failure by reproduc
 ---
 
 ## 🏢 Business Scenario
-**OneDrive Sync Incident (Date: August 13, 2026):** An employee contacts the IT Help Desk reporting that their updated documents are completely missing from the shared cloud directory, preventing their remote team members from viewing critical data. As the Tier 1 Help Desk Technician handling this call, your objective is to investigate the client workstation, isolate why the local file system is failing to replicate changes up to the cloud network repository, clear any operational blocks within the background synchronization software engine, and verify full document restoration.
+ **OneDrive Sync Incident (Date: August 13, 2026):** An employee contacts the IT Help Desk reporting that their updated documents are completely missing from the shared cloud directory, preventing their remote team members from viewing critical data. As the Tier 1 Help Desk Technician handling this call, your objective is to investigate the client workstation, isolate why the local file system is failing to replicate changes up to the cloud network repository, clear any operational blocks within the background synchronization software engine, and verify full document restoration.
 
 ---
 
@@ -37,21 +37,20 @@ To diagnose and resolve a cloud storage file synchronization failure by reproduc
 2. Click the hidden icons arrow and select the blue **OneDrive cloud icon** to launch the client management pane.
 3. Click the gear icon (**Help & Settings**), hover over the **Pause syncing** flyout menu option row, and select any duration setting (e.g., *2 hours*) to take the upload path offline.
 
-![OneDrive Management Panel Interface Simulating a Fault by Manually Pausing Synchronization Paths](images/02-pause-sync-simulation.png)
+![Pause Syncing for 2 hours via menu option](images/02-pause-sync-simulation.png)
 
-4. Return to your local File Explorer window. Verify that the file status icon next to `Diagnostic_Log.txt` has changed to a paused symbol or two parallel lines, mimicking a failed connection state.
+5. Return to your local File Explorer window. Verify that the file status icon next to `Diagnostic_Log.txt` has changed to a paused symbol or two parallel lines, mimicking a failed connection state.
 
+![File Explorer Local Folder Displaying Paused Sync Status Icon Check](images/02-pause-sync-simulation.png)
 ---
 
-### Part C: Diagnostic Verification & Remediation
-1. Modify the file while OneDrive sync is paused.
+### Part C: Remediation
 
-![Web Browser Window Confirming local File Updates Are Completely Missing From Online Cloud Repository](images/03-cloud-portal-missing.png)
+1. **Execute Access Remediation:** Return to the desktop system taskbar tray, click the OneDrive cloud icon, and look at the top notification text bar layout box indicating that syncing is currently frozen.
+2. **Resume Data Upload Pipeline:** Click the prominent **Resume syncing** button banner to force the client background service back into an active operating state.
+3. **Confirm Sync in file explorer:** Return to file explorer and make sure the icon is showing a green check mark.
 
-2. **Execute Access Remediation:** Return to the desktop system taskbar tray, click the OneDrive cloud icon, and look at the top notification text bar layout box indicating that syncing is currently frozen.
-3. **Resume Data Upload Pipeline:** Click the prominent **Resume syncing** button banner to force the client background service back into an active operating state.
-
-![OneDrive System Tray Management Menu Clicking the Resume Syncing Button Configuration Option](images/04-resume-sync-remediation.png)
+![OneDrive Sync Return back to original state](images/04-resume-sync-remediation.png)
 
 ---
 
@@ -66,4 +65,3 @@ To diagnose and resolve a cloud storage file synchronization failure by reproduc
 
 **Maintained By:** Ikenna Mennelik Ifedobi  
 **Role:** Tier 1 Help Desk Technician  
-
