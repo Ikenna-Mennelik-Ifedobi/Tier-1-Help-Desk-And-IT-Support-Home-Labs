@@ -46,11 +46,9 @@ An employee contacts the IT Help Desk reporting that their updated documents are
 
 3. **Verified Local System Fault Changes:** Checked the File Explorer properties display grid to document that the folder's synchronization status parameter flipped to a paused state overlay block.
 
-4. **Audited Core Web Portal Ingest Data:** Logged into the centralized M365 web directory space via a web browser to confirm that none of the updated file data structures were resolving on the cloud server side.
+4. **Edited Diagnostic_Log.txt:** Attempted to modify file while OneDrive sync was paused.
 
 5. **Executed Client Remediation Repair:** Returned to the system tray desktop overlay layout widget, targeted the active sync client suspension banner warning text, and clicked the **Resume syncing** button option block.
-
-6. **Completed Post-Repair Ingest Validation:** Refreshed the online file repositories overview screen to verify that the local workstation folder and text assets successfully processed and uploaded over the network with zero errors.
 
 ---
 
