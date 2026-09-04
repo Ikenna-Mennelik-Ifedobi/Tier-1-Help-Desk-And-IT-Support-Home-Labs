@@ -38,30 +38,36 @@ To systematically document the behavior of local IP configuration metrics, inter
 Before simulating the hardware fault, execute a comprehensive bottom-up diagnostic sweep to verify optimal layer-1 through layer-3 connection health.
 
 1. **Document Master IP Configurations:** Open Command Prompt and run the configuration review utility:
-   ```cmd
+
+    ```cmd
    ipconfig /all
    ```
+
 ![Command Prompt Output Displaying Master IP Configuration and Adapter Properties](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/395b8263202109a0c1d35220512fe0e292b7bc1f/Network%20Troubleshooting%20with%20Command%20Line/Screenshots/ipconfig_all.png)
 
 2. **Validate Local Software Stack:** Confirm the operating system can process low-level network instructions:
+
    ```cmd
    ping 127.0.0.1
    ```
 ![Command Prompt Successful Ping Output to Loopback Address](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/395b8263202109a0c1d35220512fe0e292b7bc1f/Network%20Troubleshooting%20with%20Command%20Line/Screenshots/loopback_address.png)
 
-3. **Validate Local Interface Assignment:** Ping the machine's own assigned local IP address (e.g., `10.0.0.50`) to verify the interface card is bound to the stack.
+3. **Validate Local Interface Assignment:** Ping the machine's own assigned local IP address to verify the interface card is bound to the stack.
+
    ```cmd
    ping [Your_Machine_IP]
    ```
 ![Command Prompt Successful Ping Output to Machine Assigned IP Address](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/395b8263202109a0c1d35220512fe0e292b7bc1f/Network%20Troubleshooting%20with%20Command%20Line/Screenshots/client_machine_ip.png)
 
 4. **Validate Local Subnet Gateway:** Ping the default gateway to ensure local area network path routing is open:
-   ```cmd
+
+    ```cmd
    ping 10.0.0.1
    ```
 ![Command Prompt Successful Ping Output to Default Gateway Router](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/395b8263202109a0c1d35220512fe0e292b7bc1f/Network%20Troubleshooting%20with%20Command%20Line/Screenshots/Default_Gateway.png)
 
 5. **Validate Wide Area Network Path:** Ping an external public host to confirm internet-wide route processing is healthy:
+
    ```cmd
    ping 8.8.8.8
    ```
@@ -77,9 +83,9 @@ Before simulating the hardware fault, execute a comprehensive bottom-up diagnost
 ---
 
 ### Part C: Analyzing the Disconnected Interface Lifecycle
-Execute the following commands in exact chronological order to document how the Windows operating system behaves when network media is completely missing.
 
 1. **Discard Active IP Lease Parameters:** Run the release utility to clear out the current configuration parameters:
+
    ```cmd
    ipconfig /release
    ```
@@ -88,6 +94,7 @@ Execute the following commands in exact chronological order to document how the 
 ![Command Prompt IPConfig Release Failing Due to Disconnected Media State](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/395b8263202109a0c1d35220512fe0e292b7bc1f/Network%20Troubleshooting%20with%20Command%20Line/Screenshots/ipconfig_release.png)
 
 2. **Attempt Lease Renewal Protocol:** Force a lease request out to the subnet infrastructure:
+
    ```cmd
    ipconfig /renew
    ```
@@ -96,6 +103,7 @@ Execute the following commands in exact chronological order to document how the 
 ![Command Prompt IPConfig Renew Failing with Media Disconnected Error Code](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/395b8263202109a0c1d35220512fe0e292b7bc1f/Network%20Troubleshooting%20with%20Command%20Line/Screenshots/ipconfig_renew.png)
 
 3. **Evaluate Local Address Resolution Table:** Inspect the local cache mapping table to evaluate gateway resolution properties:
+
    ```cmd
    arp -a
    ```
@@ -109,7 +117,8 @@ Execute the following commands in exact chronological order to document how the 
 1. **Reconnect Virtual Network Hardware:** Return to your hypervisor dashboard settings pane, re-enable the network adapter link, or check the "Connected" option box for the Windows 11 virtual machine.
 
 2. **Execute Final Reachability Sweep:** Return to the Command Prompt and ping the public network host backbone again to confirm the link layer has re-established communication:
-   ```cmd
+
+    ```cmd
    ping 8.8.8.8
    ```
 
