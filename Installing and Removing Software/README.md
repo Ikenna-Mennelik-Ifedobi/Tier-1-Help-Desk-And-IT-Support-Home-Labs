@@ -36,12 +36,15 @@ To successfully deploy an approved enterprise software package, verify installat
 
 ### Part A: Approved Software Deployment & Verification
 1. **Execute Production Installation:** Log into the Windows 11 client virtual machine, launch the approved enterprise software installer package (e.g., Adobe Acrobat Reader v24), and complete the setup wizard.
+
 ![Windows Installation Wizard Interface Executing Approved Corporate Software Deployment](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/e73cfb32d54d3f233d51158ea8ef3194eaa57ab3/Installing%20and%20Removing%20Software/Screenshots/Installation_Wizard.png)
 
 2. **Verify Correct Version Control Number:** Navigate to **Settings** > **Apps** > **Installed apps**, locate the software, and document the official version string to ensure alignment with company baselines.
+
 ![Windows Installed Apps Configuration Window Confirming Production Version Number](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/e73cfb32d54d3f233d51158ea8ef3194eaa57ab3/Installing%20and%20Removing%20Software/Screenshots/Correct_Version.png)
 
 3. **Establish Operational Application Baseline:** Launch the newly installed approved software tool from the desktop to confirm it opens cleanly without generating errors.
+
 ![Approved Enterprise Software Utility Launching Cleanly on Desktop Without Error Alerts](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/e73cfb32d54d3f233d51158ea8ef3194eaa57ab3/Installing%20and%20Removing%20Software/Screenshots/Launch_Approved_Software.png)
 
 ---
@@ -70,12 +73,15 @@ To successfully deploy an approved enterprise software package, verify installat
 1. **Target Conflicting Software Element:** Locate the unapproved legacy software object inside the **Installed apps** list panel layout.
 
 2. **Execute Clean Removal Action:** Click the three dots next to the legacy entry item tool row, select **Uninstall**, and authorize the removal action thread.
+
 ![Windows Uninstallation Wizard Removing the Conflicting Legacy Application File System Structure](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/e73cfb32d54d3f233d51158ea8ef3194eaa57ab3/Installing%20and%20Removing%20Software/Screenshots/Uninstall_Legacy.png)
 
 3. **Confirm Removal Verification:** Refresh the Installed Apps window interface ledger registry block to verify that only the single, approved production software entry remains.
+
 ![Windows Installed Apps List Audited and Confirming Only Approved Asset Remains](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/e73cfb32d54d3f233d51158ea8ef3194eaa57ab3/Installing%20and%20Removing%20Software/Screenshots/Correct_Version.png)
 
 4. **Execute Final Software Quality Check:** Launch the approved enterprise software asset utility from the desktop workspace layout to confirm it opens successfully and operates completely without crashes or errors.
+
 ![Approved Production Software Opening Successfully and Securely Restoring Workspace Baseline](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/e73cfb32d54d3f233d51158ea8ef3194eaa57ab3/Installing%20and%20Removing%20Software/Screenshots/Launch_Approved_Software.png)
 
 ---
