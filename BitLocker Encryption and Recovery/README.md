@@ -30,13 +30,13 @@ To enable BitLocker Drive Encryption on an operating system drive, export the re
 
 4. Under the Operating System Drive section row, click **Turn on BitLocker**.
 
-![BitLocker Drive Encryption Control Panel Interface Initializing Full Storage Protection](images/01-turn-on-bitlocker.png)
+![BitLocker Drive Encryption Control Panel Interface Initializing Full Storage Protection](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/c7a21ea7b6404b095cd7e4b461eb874ee384438f/BitLocker%20Encryption%20and%20Recovery/Screenshots/Turn_On_Bitlocker.png)
 
 5. Allow the wizard to finish running its automated hardware and configuration checks.
 
 6. When prompted with *How do you want to back up your recovery key*, select **Save to a file**.
 
-![BitLocker Setup Wizard Selecting Save to a File Option for the Recovery Key Backup](images/02-save-to-file-option.png)
+![BitLocker Setup Wizard Selecting Save to a File Option for the Recovery Key Backup](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/c7a21ea7b6404b095cd7e4b461eb874ee384438f/BitLocker%20Encryption%20and%20Recovery/Screenshots/Save_to_a_File.png)
 
 7. When the File Explorer browse dialog pops up, select **This PC** from the sidebar, click on your mapped network drive (**`Z:`**), open the destination share folder directory space, and click **Save**.
 
@@ -51,7 +51,7 @@ To enable BitLocker Drive Encryption on an operating system drive, export the re
 
 3. Browse the directory listing to locate the newly written text document (e.g., `BitLocker Recovery Key [ID].txt`).
 
-![Windows 11 File Explorer Confirming the BitLocker Recovery Key Text File Exists Inside the Mapped Z Drive Folder](images/03-network-backup-verification.png)
+![Windows 11 File Explorer Confirming the BitLocker Recovery Key Text File Exists Inside the Mapped Z Drive Folder](https://github.com/Ikenna-Mennelik-Ifedobi/Tier-1-Help-Desk-And-IT-Support-Home-Labs/blob/977e9ce17983b45ab10bd7ffdb92210f1bf5535c/BitLocker%20Encryption%20and%20Recovery/Screenshots/Recovery_Key_File.png)
 
 > [!WARNING]
 > **PUBLIC PORTFOLIO SECURITY NOTE:** Even in a home lab or sandbox scenario, **never open the recovery text file to display or screenshot the raw 48-digit cryptographic key string on a public repository like GitHub**. Leaving the cleartext key visible compromises the baseline security of your lab workstation environment. Presenting an obfuscated or unopened file footprint demonstrates proper security awareness and data handling discipline to prospective employers reviewing your portfolio.
